@@ -17,7 +17,7 @@ public class Home extends Building {
 
     @Override
     public int calculateNumberOfPeopleCanFit() {
-        return getArea() * getLevels() / SQUARE_METERS_NEED_PER_PERSON;
+        return getFullArea() / SQUARE_METERS_NEED_PER_PERSON;
     }
 
     private boolean isLevelsValid(int levels) {

@@ -68,7 +68,7 @@ public class City {
     private long getActualArea() {
         long sum = 0;
         for (Building building : buildings) {
-            sum += building.getArea();
+            sum += building.getFullArea();
         }
         return sum;
     }

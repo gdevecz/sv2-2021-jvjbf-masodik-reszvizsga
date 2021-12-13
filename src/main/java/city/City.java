@@ -27,6 +27,8 @@ public class City {
     public void addBuilding(Building building) {
         if (fullArea >= building.getArea() + getActualArea()) {
             buildings.add(building);
+        } else {
+            throw new IllegalArgumentException("City can't be larger than 500");
         }
     }
 
